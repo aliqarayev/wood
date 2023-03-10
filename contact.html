@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-16x16.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!--? Overlay Menu Start -->
+    <div class="overlay-menu">
+      <i class="bi bi-x-lg"></i>
+      <div class="overlay-links">
+        <a href="index.html">Əsas Səhifə</a>
+        <a href="projectsdetials.html">Layihələr</a>
+        <a href="services.html">Xidmətlər</a>
+        <a href="company.html">Şirkət</a>
+      </div>
+    </div>
+    <!--? Overlay Menu End -->
+    <!--!Header start -->
+    <header class="header mb-3">
+      <div class="container-lg">
+        <div class="header-logo">
+          <a href="index.html"
+            ><img src="/images/logoblack.svg" alt="logo"
+          /></a>
+        </div>
+        <div class="header-links">
+          <nav class="nav-links">
+            <ul>
+              <li><a href="index.html" class="text-dark">Əsas Səhifə</a></li>
+              <li>
+                <a href="projectsdetials.html" class="text-dark">Layihələr</a>
+              </li>
+              <li><a href="services.html" class="text-dark">Xidmətlər</a></li>
+              <li><a href="company.html" class="text-dark">Şirkət</a></li>
+              <li><a href="blog.html" class="text-dark"> Blog </a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-icons">
+          <a href="#" class="text-dark"><i class="bi bi-instagram"></i> </a>
+          <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+      <button class="burger border-0 bg-transparent text-dark openbtn">
+        <i class="bi bi-justify-right"></i>
+      </button>
+    </header>
+    <!--! Header end -->
+    <!-- contanct -->
+    <div class="contact">
+      <h1 class="text-center py-2">Əlaqə</h1>
+      <p class="text-center py-2">
+        İstənilən sualı bizə yazın və ya sifariş verin. <br />
+        Menecerlərimiz sizə ən qısa zamanda cavab verəcəklər.
+      </p>
+
+      <form
+        class="contact-form d-flex flex-column justify-content-center align-items-center left-300"
+        id="form"
+        action=" https://www.google.com/webhp?hl=tr&sa=X&ved=0ahUKEwih8O2Pi8f9AhXcSPEDHUsiCE0QPAgI"
+      >
+        <input type="text" id="name" placeholder=" Adınız" />
+        <input
+          type="tel"
+          pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+          placeholder="  Nömrəniz"
+          class="right-350 number"
+          id="number"
+        />
+        <textarea
+          class="mb-3"
+          cols="30"
+          rows="5"
+          placeholder="  Mesajın..."
+          id="textarea"
+        ></textarea>
+
+        <button class="custom-btn-lg">Mesaj göndərin</button>
+      </form>
+    </div>
+    <!-- contanct -->
+    <!-- location -->
+    <div class="locationmap mt-5 pb-5">
+      <h2 class="text-center text-white">Əlaqələrimiz</h2>
+      <div class="location d-flex align-items-center justify-content-center">
+        <i class="bi bi-geo-alt-fill"></i>
+        <p class="text-white">
+          Səbail r., Nigar Rəfibəyli 49a, Fəvvarələr meydanı.
+        </p>
+      </div>
+      <div class="map align-items-center d-flex justify-content-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24314.170421285653!2d49.86520907898092!3d40.38067929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d7193bdec4b%3A0x809ed7a1e3b45b24!2zRsmZdnZhcsmZbMmZciBNZXlkYW7EsSAtIEJha8SxIEHEnyDFnsmZaMmZcg!5e0!3m2!1str!2s!4v1676718875983!5m2!1str!2s"
+          width="800"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <!-- location -->
+
+    <!-- ! Footer -->
+    <footer>
+      <div class="footer py-4">
+        <div class="footer-about ms-4">
+          <a href="index.html"
+            ><img src="./images/footerlogo.svg" alt="footer-logo" class="my-4"
+          /></a>
+          <h4 class="text-white">Bizim haqqımızda qısaca</h4>
+          <p class="text-white pb-2">
+            Biz hər bir məhsulun xarici görünüşünü hərtərəfli öyrənir və sonra
+            müştərilərimizlə müzakirə edirik. Biz nadir hallarda özümüzü təkrar
+            edirik, çünki biz bilirik ki, siz fərdiliyi qiymətləndirirsiniz və
+            hazır həllərlə kifayətlənməyə hazır deyilsiniz.
+          </p>
+        </div>
+        <div class="footer-menu">
+          <h4 class="text-white text-center">Menyu</h4>
+          <ul>
+            <li><a href="#">Əsas Səhifə</a></li>
+            <li><a href="#">Layihələr</a></li>
+            <li><a href="#">Xidmətlər</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Şirkət</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4 class="text-white text-center">Xidmətlər</h4>
+          <ul>
+            <li><a href="#">Daxili Dizayn</a></li>
+            <li><a href="#">Dizayn</a></li>
+            <li><a href="#">odun təchizatı</a></li>
+            <li><a href="#">Təmir</a></li>
+            <li><a href="#">Konsepsiya </a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4 class="text-white">Bizim sosial şəbəkələr</h4>
+          <p class="text-white">
+            Dünyadakı müştərilərimiz üçün hazırlanmış yeni inanılmaz layihələri
+            qaçırmamaq üçün bizi sosial mediada izləyin.
+          </p>
+          <div class="social-network mt-3">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ! Footer -->
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

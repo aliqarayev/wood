@@ -1,0 +1,59 @@
+.contact {
+  &-form {
+    gap: 0.625rem;
+    input {
+      width: 22.5rem;
+      height: 2.75rem;
+      border: 1px solid #e4e6e8;
+      border-top-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $accent-color;
+      }
+
+      &.success {
+        border: 1px solid green;
+      }
+      &.error {
+        border: 1px solid red;
+      }
+
+      .number {
+        &.success {
+          border: 1px solid green;
+        }
+        &.error {
+          border: 1px solid red;
+        }
+      }
+    }
+
+    textarea {
+      width: 22.5rem;
+      height: 8.75rem;
+      border: 1px solid #e4e6e8;
+      border-top-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+      &:focus {
+        outline: none;
+        border: 1px solid $accent-color;
+      }
+      &.success {
+        border: 1px solid green;
+      }
+      &.error {
+        border: 1px solid red;
+      }
+    }
+  }
+}
+
+.locationmap {
+  background-color: $dark-color;
+
+  i {
+    color: $accent-color !important;
+  }
+}

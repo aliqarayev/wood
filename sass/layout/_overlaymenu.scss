@@ -1,0 +1,47 @@
+/*Overlay Menu Start*/
+.overlay-menu {
+  background-image: linear-gradient(
+    to right top,
+    #f88500,
+    #d7701d,
+    #b45c26,
+    #914b29,
+    #6d3c29
+  );
+  height: 100vh;
+  position: fixed;
+  width: 0;
+  z-index: 999999;
+  overflow-x: hidden;
+  transition: width 0.5s ease;
+  &.aktive {
+    width: 100%;
+  }
+
+  .bi-x-lg {
+    color: #ffffff;
+    font-size: 40px;
+    text-decoration: none;
+    position: absolute;
+    right: 45px;
+    cursor: pointer;
+  }
+
+  .overlay-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+    a {
+      transition: all 1s ease;
+      font-size: 30px;
+
+      &:hover {
+        color: rgb(0, 0, 0) !important ;
+      }
+    }
+  }
+}
+/*Overlay Menu End*/

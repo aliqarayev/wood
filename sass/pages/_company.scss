@@ -1,0 +1,139 @@
+body {
+  transition: 0.3s all;
+
+  &.active {
+    .side-bar {
+      h2 {
+        color: #fff;
+      }
+      background-color: #000;
+    }
+  }
+}
+
+.side-bar {
+  position: absolute;
+  width: 200px;
+  height: 170px;
+  background-color: #f1eeee;
+
+  h2 {
+    font-weight: 800;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  ul {
+    padding: 0 !important;
+
+    li {
+      cursor: pointer;
+      margin: 5px;
+
+      &:hover {
+        background-color: $accent-color;
+
+        a {
+          color: #fff !important;
+        }
+      }
+
+      a {
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      &.aktiv {
+        background-color: $accent-color;
+        a {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+.company-about {
+  h1 {
+    font-weight: 800;
+    font-size: 30px;
+  }
+  margin-left: 210px;
+
+  display: none;
+
+  &.activ {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    margin: 20px;
+  }
+}
+
+.company-advantages {
+  h1 {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  margin-left: 210px;
+  display: none;
+
+  &.activ {
+    display: block;
+  }
+  .company-our-partners {
+    margin-left: 210px;
+    display: none;
+    &.activ {
+      display: block;
+    }
+  }
+  .cards-company-advantages {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    gap: 10px;
+  }
+}
+
+@media (max-width: 990px) {
+  .side-bar {
+    position: relative !important;
+    width: 100%;
+  }
+  .company-about {
+    margin: 0 !important;
+    img {
+      width: 100vh !important;
+    }
+  }
+
+  .company-advantages {
+    margin: 0 !important;
+    .cards-company-advantages {
+      grid-template-columns: auto auto auto;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .company-advantages {
+    .cards-company-advantages {
+      grid-template-columns: 1fr 340px !important;
+      place-items: center;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .company-advantages {
+    .cards-company-advantages {
+      grid-template-columns: 3fr !important;
+      place-items: center;
+    }
+  }
+}

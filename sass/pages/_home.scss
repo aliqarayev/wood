@@ -1,0 +1,368 @@
+.testimonials {
+  background-color: $deep-color;
+
+  .row {
+    align-items: center;
+    h3 {
+      font-weight: 900;
+      font-size: 18px;
+    }
+    b,
+    span {
+      font-family: "Roboto", sans-serif !important;
+    }
+
+    .col-lg-3 {
+      color: $dark-header-color;
+
+      .number {
+        color: #fff;
+        font-size: 28px;
+      }
+
+      a {
+        font-weight: 800;
+      }
+
+      p {
+        padding-top: 1.25rem !important;
+        font-weight: 400;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+// !works
+
+.works-container {
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.works {
+  background-color: $dark-color;
+  height: 20rem;
+
+  .works-title {
+    display: flex;
+    gap: 50px;
+    padding-top: 2.5rem;
+    .works-title-left {
+      display: flex;
+      flex-basis: 50%;
+    }
+
+    .works-title-right {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .line {
+    border: 1px solid #2d3038;
+  }
+}
+
+// !card
+.cards {
+  .cards-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .card {
+      position: relative;
+      top: -110px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+  }
+
+  .cards-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .card-body {
+    a {
+      text-decoration: underline !important;
+      font-weight: bold;
+      font-size: 18px;
+      color: #2d3038 !important;
+    }
+  }
+}
+
+// ! About
+
+.about {
+  display: flex;
+  padding-bottom: 6.25rem;
+  .left-side {
+    margin-right: 30px;
+  }
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+
+    p {
+      margin: 20px 20px 20px 0px !important ;
+    }
+    span {
+      color: $accent-color;
+      font-weight: 800;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    h2 {
+      font-weight: 800;
+      font-size: 29px;
+    }
+  }
+  .left-side {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-side-items {
+    display: flex;
+
+    .right-side-item {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      .right-side-item-title {
+        display: flex;
+        border-bottom: 1px solid #2d3038;
+        align-items: center;
+        h3 {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: start;
+    span {
+      width: 9px;
+      height: 9px;
+      background-color: $accent-color;
+      border-radius: 50%;
+      animation: jump 1.5s linear infinite;
+
+      &:nth-child(1) {
+        animation-delay: 0s;
+      }
+      &:nth-child(2) {
+        animation-delay: 0.5s;
+      }
+      &:nth-child(3) {
+        animation-delay: 1s;
+      }
+    }
+  }
+}
+@keyframes jump {
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+// ! About
+
+// ! partners
+
+.partners {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .partner-text h4 {
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
+}
+
+// ! partners
+
+// ! Our blog
+.blogs {
+  .blog1 {
+    display: none;
+    gap: 10px;
+    &.active {
+      display: flex;
+    }
+  }
+  .blog2 {
+    display: none;
+    gap: 10px;
+    &.active {
+      display: flex;
+    }
+  }
+  h5 {
+    font-size: 1.125rem;
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+  a {
+    font-weight: 800;
+    font-size: 0.9375rem;
+  }
+  .my-custom-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    span {
+      width: 35px;
+      height: 7.5px;
+
+      background-color: #b3b3b8;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 20px;
+      cursor: pointer;
+
+      &.active {
+        background-color: $accent-color;
+        border: 1px solid $accent-color;
+      }
+    }
+  }
+
+  .moreblog {
+    position: relative;
+    left: 30px;
+    bottom: 150px;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+}
+
+//!------------------------------Media Quers--------------------------------------
+
+// ? testimonials Media Quers
+@media (max-width: 991px) {
+  .testimonials {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonials {
+    padding-top: 50px;
+  }
+}
+
+// ? testimonials Media Quers
+
+// * Works Media Quers
+@media (max-width: 900px) {
+  .works {
+    height: auto !important;
+    &-title {
+      display: block !important;
+    }
+  }
+}
+@media (max-width: 780px) {
+  .works {
+    .works-title {
+      flex-direction: column;
+    }
+  }
+  .cards {
+    margin-top: 10px;
+    .cards-items {
+      .card {
+        position: static !important;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+          rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      }
+    }
+    &-button {
+      margin-top: 15px;
+    }
+  }
+}
+//? Cards
+@media (max-width: 900px) {
+  .cards {
+    margin-top: 10px;
+    .cards-items {
+      flex-wrap: wrap;
+      .card {
+        position: static !important;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+          rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      }
+    }
+    &-button {
+      margin-top: 15px;
+    }
+  }
+}
+// * Works Media Quers
+
+// ! About Media Quers
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    .right-side-items {
+      flex-direction: column;
+    }
+  }
+}
+// ! About Media Quers
+
+// ? Partners Media Quers
+@media (max-width: 992px) {
+  .partners {
+    height: auto;
+  }
+}
+// ? Partners Media Quers
+
+//* Our blog Media Quers
+@media (max-width: 990px) {
+  .blogs {
+    .blog1 {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .blog2 {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+}
+//* Our blog Media Quers

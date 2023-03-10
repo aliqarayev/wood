@@ -1,0 +1,12 @@
+html::-webkit-scrollbar {
+  width: 0.8rem;
+  background-color: #fff;
+
+  &-track {
+    background-color: transparent
+  }
+  &-thumb {
+    border-radius: 1rem;
+    background-color: $accent-color;
+  }
+}

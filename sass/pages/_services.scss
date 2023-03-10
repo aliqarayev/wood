@@ -1,0 +1,103 @@
+body {
+  transition: 0.3s all;
+
+  &.active {
+    background-color: #000;
+    h1 {
+      color: #fff;
+    }
+    h4 {
+      color: #fff !important;
+    }
+    a {
+      color: #fff !important;
+    }
+    h5 {
+      color: #fff !important;
+      }
+
+    .header-icons {
+      display: flex;
+      gap: 0.75rem;
+
+      i {
+        color: #fff !important;
+        font-size: 19px;
+      }
+
+      .bi-instagram:hover {
+        color: $accent-color !important;
+      }
+      .bi-facebook:hover {
+        color: $accent-color !important;
+      }
+      .bi-whatsapp:hover {
+        color: $accent-color !important;
+      }
+      .bi-twitter:hover {
+        color: $accent-color !important;
+      }
+    }
+
+    p {
+      color: #fff;
+    }
+    .card {
+      background-color: #000;
+      border: 1px solid #333;
+      transition: 0.3s all;
+    }
+  }
+}
+
+
+
+.main {
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .main-text {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: #9999;
+  }
+
+  .works-card {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .work-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7e7e7e;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+
+    a:hover {
+      color: $accent-color !important;
+      text-decoration: underline !important  ;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .works-card {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
